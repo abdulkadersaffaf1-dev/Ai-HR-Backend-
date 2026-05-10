@@ -1,0 +1,21 @@
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
+
+# ML stack — must match what was used to train the model
+xgboost==2.0.3
+scikit-learn==1.4.2
+imbalanced-learn==0.12.3
+
+# NLP
+sentence-transformers==2.7.0
+nltk==3.8.1
+contractions==0.1.73
+beautifulsoup4==4.12.3
+spacy==3.7.4
+
+# Data
+pandas==2.2.2
+numpy==1.26.4
+pdfplumber==0.11.0
+joblib==1.4.2
