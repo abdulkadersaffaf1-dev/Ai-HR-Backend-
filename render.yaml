@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ai-hr-backend
+    env: python
+    plan: starter
+    buildCommand: pip install -r requirements.txt && python -m spacy download en_core_web_sm
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    disk:
+      name: hr-data
+      mountPath: /data
+      sizeGB: 2
